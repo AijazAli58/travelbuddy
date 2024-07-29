@@ -1,0 +1,175 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    width: 250px; /* Adjust width as needed */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Clear button additional style */
+#clear-button {
+    background-color: #f44336; /* Red */
+}
+
+#clear-button:hover {
+    background-color: #c0392b;
+}
+
+/* Full-screen background image */
+.hero-image {
+    background-image: url('images/melbourne.jpg'); /* Add your image URL here */
+    height: 100vh;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styling for the text overlay */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%; /* Centers the icons vertically */
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+    margin: 10px;
+    font-size: 24px; /* Icon size */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Circular icons */
+    width: 40px; /* Ensures the icons are circles */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    color: #4CAF50; /* Color change on hover */
+}
+
+.place {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 5px;
+}
+
+.place img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.place .result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.place .result-info h3 {
+    margin: 0 0 10px;
+}
+
+.place .result-info p {
+    margin: 0 0 10px;
+}
+
+.place .visit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.place .visit-button:hover {
+    background-color: #45a049;
+}

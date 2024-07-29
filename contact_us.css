@@ -1,0 +1,108 @@
+/* General resets and styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: white; /* Ensures text is readable on potentially dark backgrounds */
+}
+
+.full-bg {
+  background-image: url('images/melbourne.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Navbar styling */
+nav {
+  background-color: rgba(0, 0, 0, 0.5); /* Making the navbar slightly more transparent */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav .logo a, nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+/* Social Icons - consistent style across all pages */
+.social-icons {
+  position: fixed; /* Fixed position to ensure visibility on all page sections */
+  top: 50%; /* Adjust position to better match the screenshot */
+  left: 10px; /* Space from the left edge */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 10px;
+  font-size: 24px; /* Icon size */
+  display: flex; /* Center icons in their anchor tags */
+  width: 40px; /* Width of the clickable area */
+  height: 40px; /* Height of the clickable area */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a:hover {
+  color: #4CAF50; /* Highlight color on hover */
+}
+
+/* Contact form styling */
+.contact-section {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Adjust background opacity to match the screenshot */
+  margin: 50px auto;
+  width: 40%; /* Adjust width for a narrower form */
+  border: 2px solid red; /* Highlighted border */
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 90%; /* Responsive width */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Adding subtle borders to inputs */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  height: 100px; /* Set textarea height */
+}
